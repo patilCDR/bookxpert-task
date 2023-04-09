@@ -6,13 +6,13 @@ const Home = () => {
       <img
         src="https://img.freepik.com/free-vector/flat-hand-drawn-remote-working-scenes_23-2148810194.jpg?size=626&ext=jpg"
         alt=""
-        style={{ width: "100vw", height: "90vh", background: "contain" }}
+        style={{ width: "100vw", height: "auto", background: "contain" }}
       />
-      <div class="container text-center">
+      <div class="container ">
         <h1 className="text-center " style={{ color: " #05a0e8" }}>
           One Stop Solution For All Your Business Problems
         </h1>
-        <div className="row p-4 m-4">
+        <div className="row m-4 py-4">
           <div className="col-lg-6 col-sm-12">
             <img
               className="img-fluid "
@@ -44,7 +44,7 @@ const Home = () => {
         <h1 className="text-center " style={{ color: " #05a0e8" }}>
           We help you to improve your business leads.
         </h1>
-        <div className="row p-4 m-4">
+        <div className="row py-4 m-4">
           <div className="col-lg-6 col-sm-12">
             <h5 className="abt-content">
               At our company, we understand the importance of generating quality
@@ -78,7 +78,7 @@ const Home = () => {
         <h1 className="text-center " style={{ color: " #05a0e8" }}>
           We guide you on the right path to success
         </h1>
-        <div className="row p-4 m-4">
+        <div className="row py-4 m-4">
           <div className="col-lg-6 col-sm-12">
             <img
               className="img-fluid "
@@ -111,7 +111,7 @@ const Home = () => {
         <h1 className="text-center " style={{ color: " #05a0e8" }}>
           We Believe In TeamWork.
         </h1>
-        <div className="row p-4 m-4">
+        <div className="row py-4 m-4">
           <div className="col-lg-6 col-sm-12">
             <h5 className="abt-content">
               At our company, we firmly believe in the power of teamwork. We
