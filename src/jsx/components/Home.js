@@ -1,18 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
 
 const Home = () => {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
   return (
     <>
-      <img
-        src="https://img.freepik.com/free-vector/flat-hand-drawn-remote-working-scenes_23-2148810194.jpg?size=626&ext=jpg"
-        alt=""
-        style={{ width: "100vw", height: "auto", background: "contain" }}
-      />
-      <div class="container ">
-        <h1 className="text-center " style={{ color: " #05a0e8" }}>
-          One Stop Solution For All Your Business Problems
-        </h1>
-        <div className="row m-4 py-4">
+      <Carousel
+        activeIndex={index}
+        onSelect={handleSelect}
+        className="main-carousel"
+      >
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+            alt="Second slide"
+          />
+
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+            alt="Third slide"
+          />
+
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+      {/* <img
+        src='https://img.freepik.com/free-vector/flat-hand-drawn-remote-working-scenes_23-2148810194.jpg?size=626&ext=jpg'
+        alt=''
+        className='landing-img'
+      /> */}
+      <div className="container">
+        <div className="row p-2 p-lg-4 ">
+          <div className="col-12">
+            <h1 className="text-center text-blue landing-title">
+              One Stop Solution For All Your Business Problems
+            </h1>
+          </div>
           <div className="col-lg-6 col-sm-12">
             <img
               className="img-fluid "
@@ -21,7 +73,7 @@ const Home = () => {
             />
           </div>
           <div className="col-lg-6 col-sm-12">
-            <h5 className="abt-content">
+            <p className="abt-content text-justify text-lg-right">
               Our company provides a one-stop solution for all your business
               problems. We understand that businesses face numerous challenges,
               and finding solutions to these problems can be time-consuming and
@@ -38,15 +90,16 @@ const Home = () => {
               money by accessing a broad range of services from a single
               provider. We work closely with our clients to understand their
               needs and develop customized solutions that deliver real results.
-            </h5>
+            </p>
           </div>
         </div>
+
         <h1 className="text-center " style={{ color: " #05a0e8" }}>
           We help you to improve your business leads.
         </h1>
         <div className="row py-4 m-4">
           <div className="col-lg-6 col-sm-12">
-            <h5 className="abt-content">
+            <p className="abt-content">
               At our company, we understand the importance of generating quality
               leads for your business. Without leads, your business will
               struggle to attract new customers and grow. That's why we offer
@@ -54,20 +107,22 @@ const Home = () => {
               <br />
               We work closely with our clients to understand their target market
               and develop effective strategies to reach them. Our services
+              <br />
+              We work closely with our clients to understand their target market
+              and develop effective strategies to reach them. Our services
               include lead generation, lead management, and lead nurturing,
               which are all designed to help businesses increase their
               conversion rates and improve their bottom line.
               <br />
-              Our team of experts has years of experience in the industry and
-              can provide valuable insights and guidance to help businesses
-              improve their leads. By working with us, businesses can focus on
-              what they do best while leaving the lead generation and management
-              to us. We are committed to helping our clients succeed and achieve
-              their goals by providing them with the support they need to
-              improve their business leads.
-            </h5>
+              insights and guidance to help businesses improve their leads. By
+              working with us, businesses can focus on what they do best while
+              leaving the lead generation and management to us. We are committed
+              to helping our clients succeed and achieve their goals by
+              providing them with the support they need to improve their
+              business leads.
+            </p>
           </div>
-          <div className="col-lg-6 col-sm-12">
+          <div className="col-lg-6 col-sm-12 order-lg-1 order-0">
             <img
               className="img-fluid "
               src="https://img.freepik.com/free-vector/two-business-partners-handshaking_74855-6685.jpg?size=626&ext=jpg"
@@ -78,7 +133,7 @@ const Home = () => {
         <h1 className="text-center " style={{ color: " #05a0e8" }}>
           We guide you on the right path to success
         </h1>
-        <div className="row py-4 m-4">
+        <div className="row p-4 m-4">
           <div className="col-lg-6 col-sm-12">
             <img
               className="img-fluid "
@@ -111,7 +166,7 @@ const Home = () => {
         <h1 className="text-center " style={{ color: " #05a0e8" }}>
           We Believe In TeamWork.
         </h1>
-        <div className="row py-4 m-4">
+        <div className="row p-4 m-4">
           <div className="col-lg-6 col-sm-12">
             <h5 className="abt-content">
               At our company, we firmly believe in the power of teamwork. We
