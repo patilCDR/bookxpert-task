@@ -1,16 +1,28 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
+:root {
+  --dgBlue: #05a0e8;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.text-blue {
+  color: var(--dgBlue);
+}
+
+.landing-title {
+  color: var(--dgBlue);
+  font-size: 2rem;
+  margin: 2rem auto;
 }
 
 /* Header css */
@@ -27,7 +39,7 @@ code {
 /* Footer css */
 .site-footer {
   background-color: #26272b;
-  padding: 45px 0 20px;
+  padding: 5px;
   font-size: 15px;
   line-height: 24px;
   color: #737373;
@@ -88,7 +100,7 @@ code {
   margin: 0;
 }
 @media (max-width: 991px) {
-  .site-footer [class^="col-"] {
+  .site-footer [class^='col-'] {
     margin-bottom: 30px;
   }
 }
@@ -107,8 +119,9 @@ code {
   list-style: none;
 }
 .social-icons li {
-  display: inline-block;
-  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .social-icons li.title {
   margin-right: 15px;
@@ -122,11 +135,11 @@ code {
   color: #818a91;
   font-size: 16px;
   display: inline-block;
-  line-height: 44px;
   width: 44px;
   height: 44px;
   text-align: center;
   margin-right: 8px;
+  margin: auto 8px auto 0px;
   border-radius: 100%;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -156,10 +169,26 @@ code {
 .social-icons a.dribbble:hover {
   background-color: #ea4c89;
 }
+
+.landing-img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: cover;
+}
+
+.main-carousel {
+  max-height: 90vh;
+  overflow: hidden;
+}
+
 @media (max-width: 767px) {
   .social-icons li.title {
     display: block;
     margin-right: 0;
     font-weight: 600;
+  }
+
+  .landing-title {
+    font-size: 1.2rem;
   }
 }

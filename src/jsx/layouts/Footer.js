@@ -1,41 +1,48 @@
-import React from "react";
+import React from 'react';
+import { BsFacebook } from 'react-icons/bs';
 
 const Footer = () => {
   return (
     <div>
-      <footer class="site-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">
-                Copyright &copy; 2023 All Rights Reserved by
-                <a href="http://www.bookxpert.co.in/"> BookXpert</a>.
+      <footer className='bg-dark py-2'>
+        <div class='container'>
+          <div class='d-flex align-items-center justify-content-between flex-wrap h-100'>
+            <div className='my-auto d-flex align-items-center'>
+              <p class='text-white'>
+                Copyright &copy; 2023 All Rights Reserved by{' '}
+                <a href='http://www.bookxpert.co.in/' className='text-white'>
+                  BookXpert
+                </a>
+                .
               </p>
             </div>
-
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <ul class="social-icons">
+            <div>
+              <ul class='social-icons d-flex align-items-center'>
                 <li>
-                  <a class="facebook" href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                  7
-                </li>
-                <li>
-                  <a class="twitter" href="#">
-                    <i class="fa fa-twitter"></i>
+                  <a class='facebook' href='#'>
+                    <BsFacebook />
                   </a>
                 </li>
                 <li>
-                  <a class="dribbble" href="#">
-                    <i class="fa fa-dribbble"></i>
+                  <a class='facebook' href='#'>
+                    <BsFacebook />
+                  </a>
+                </li>
+                {/* <li>
+                  <a class='twitter' href='#'>
+                    <i class='fa fa-twitter'></i>
                   </a>
                 </li>
                 <li>
-                  <a class="linkedin" href="#">
-                    <i class="fa fa-linkedin"></i>
+                  <a class='dribbble' href='#'>
+                    <i class='fa fa-dribbble'></i>
                   </a>
                 </li>
+                <li>
+                  <a class='linkedin' href='#'>
+                    <i class='fa fa-linkedin'></i>
+                  </a>
+                </li> */}
               </ul>
             </div>
           </div>
