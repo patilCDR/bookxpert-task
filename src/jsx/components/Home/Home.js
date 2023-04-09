@@ -42,12 +42,14 @@ const Home = () => {
           </div>
         </div>
 
-        <h1 className="text-center " style={{ color: " #05a0e8" }}>
-          We help you to improve your business leads.
-        </h1>
-        <div className="row py-4 m-4">
-          <div className="col-lg-6 col-sm-12">
-            <p className="abt-content">
+        <div className="row p-2 p-lg-4 ">
+          <div className="col-12">
+            <h1 className="text-center text-blue landing-title">
+              We help you to improve your business leads.
+            </h1>
+          </div>
+          <div className="col-lg-6 col-sm-12 order-lg-0 order-1">
+            <p className="abt-content text-justify text-lg-end">
               At our company, we understand the importance of generating quality
               leads for your business. Without leads, your business will
               struggle to attract new customers and grow. That's why we offer
@@ -55,19 +57,17 @@ const Home = () => {
               <br />
               We work closely with our clients to understand their target market
               and develop effective strategies to reach them. Our services
-              <br />
-              We work closely with our clients to understand their target market
-              and develop effective strategies to reach them. Our services
               include lead generation, lead management, and lead nurturing,
               which are all designed to help businesses increase their
               conversion rates and improve their bottom line.
               <br />
-              insights and guidance to help businesses improve their leads. By
-              working with us, businesses can focus on what they do best while
-              leaving the lead generation and management to us. We are committed
-              to helping our clients succeed and achieve their goals by
-              providing them with the support they need to improve their
-              business leads.
+              Our team of experts has years of experience in the industry and
+              can provide valuable insights and guidance to help businesses
+              improve their leads. By working with us, businesses can focus on
+              what they do best while leaving the lead generation and management
+              to us. We are committed to helping our clients succeed and achieve
+              their goals by providing them with the support they need to
+              improve their business leads.
             </p>
           </div>
           <div className="col-lg-6 col-sm-12 order-lg-1 order-0">
@@ -78,10 +78,12 @@ const Home = () => {
             />
           </div>
         </div>
-        <h1 className="text-center " style={{ color: " #05a0e8" }}>
-          We guide you on the right path to success
-        </h1>
-        <div className="row p-4 m-4">
+        <div className="row p-2 p-lg-4 ">
+          <div className="col-12">
+            <h1 className="text-center text-blue landing-title">
+              We guide you on the right path to success
+            </h1>
+          </div>
           <div className="col-lg-6 col-sm-12">
             <img
               className="img-fluid "
@@ -90,7 +92,7 @@ const Home = () => {
             />
           </div>
           <div className="col-lg-6 col-sm-12">
-            <h5 className="abt-content">
+            <p className="abt-content text-justify text-lg-right">
               "We help you to get success in your business" is a statement that
               reflects our commitment to supporting business owners in achieving
               their goals. Starting and growing a successful business can be a
@@ -108,15 +110,18 @@ const Home = () => {
               performance. Our focus is on building long-term relationships with
               our clients and providing them with the support they need to
               achieve sustained success in their business endeavors.
-            </h5>
+            </p>
           </div>
         </div>
-        <h1 className="text-center " style={{ color: " #05a0e8" }}>
-          We Believe In TeamWork.
-        </h1>
-        <div className="row p-4 m-4">
-          <div className="col-lg-6 col-sm-12">
-            <h5 className="abt-content">
+
+        <div className="row p-2 p-lg-4 ">
+          <div className="col-12">
+            <h1 className="text-center text-blue landing-title">
+              We Believe In TeamWork.
+            </h1>
+          </div>
+          <div className="col-lg-6 col-sm-12 order-lg-0 order-1">
+            <p className="abt-content text-justify text-lg-end">
               At our company, we firmly believe in the power of teamwork. We
               understand that when individuals come together and collaborate
               towards a common goal, they can achieve great things. This is why
@@ -134,9 +139,9 @@ const Home = () => {
               objectives. We believe that by embracing teamwork, we can create a
               positive and productive work environment that fosters growth,
               creativity, and success.
-            </h5>
+            </p>
           </div>
-          <div className="col-lg-6 col-sm-12">
+          <div className="col-lg-6 col-sm-12 order-lg-1 order-0">
             <img
               className="img-fluid "
               src="https://img.freepik.com/premium-vector/students-man-woman-sit-pile-books-read-book-learn-technology-online-learning_352905-313.jpg?size=626&ext=jpg"

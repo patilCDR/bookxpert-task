@@ -1,30 +1,30 @@
-import React from 'react';
-import { BsFacebook } from 'react-icons/bs';
+import React from "react";
+import { BsFacebook } from "react-icons/bs";
 
 const Footer = () => {
   return (
     <div>
-      <footer className='bg-dark py-2'>
-        <div class='container'>
-          <div class='d-flex align-items-center justify-content-between flex-wrap h-100'>
-            <div className='my-auto d-flex align-items-center'>
-              <p class='text-white'>
-                Copyright &copy; 2023 All Rights Reserved by{' '}
-                <a href='http://www.bookxpert.co.in/' className='text-white'>
+      <footer className="bg-dark py-2">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between flex-wrap h-100">
+            <div className="my-auto d-flex align-items-center">
+              <p class="text-white">
+                Copyright &copy; 2023 All Rights Reserved by{" "}
+                <a href="http://www.bookxpert.co.in/" className="text-white">
                   BookXpert
                 </a>
                 .
               </p>
             </div>
             <div>
-              <ul class='social-icons d-flex align-items-center'>
+              <ul class="social-icons d-flex align-items-center">
                 <li>
-                  <a class='facebook' href='#'>
+                  <a class="facebook" href="#">
                     <BsFacebook />
                   </a>
                 </li>
                 <li>
-                  <a class='facebook' href='#'>
+                  <a class="facebook" href="#">
                     <BsFacebook />
                   </a>
                 </li>
