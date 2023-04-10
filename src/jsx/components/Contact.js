@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
       <div class="contact3 py-5">
-        <h1 class="font-weight-light mt-2 order-0 order-lg-1 text-center">
+        <h1 class="font-weight-bold mt-2 order-0 order-lg-1 text-center">
           Contact Us
         </h1>
         <div class="row no-gutters">
@@ -18,16 +18,16 @@ const Contact = () => {
                     src={contactImg}
                     alt=""
                     className="img-fluid"
-                    width={800}
+                    // width={800}
                   />
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="contact-box ml-3">
+              <div class="col-lg-4 border border-dark border-1 rounded m-4 p-4">
+                <div class="contact-box ">
                   <h3 class="font-weight-light mt-2 order-0 order-lg-1">
                     Quick Contact
                   </h3>
-                  <form class="mt-4">
+                  <form class="mt-4 ">
                     <div class="row">
                       <div class="col-lg-12">
                         <div class="form-group mt-2">
@@ -99,54 +99,6 @@ const Contact = () => {
                       </div>
                     </div>
                   </form>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="card mt-4 border-0 mb-4">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-4">
-                      <div class="card-body d-flex align-items-center c-detail pl-0">
-                        <div class="mr-3 align-self-center">
-                          <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon1.png" />
-                        </div>
-                        <div class="">
-                          <h6 class="font-weight-medium">Address</h6>
-                          <p class="">
-                            601 Sherwood Ave.
-                            <br /> San Bernandino
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                      <div class="card-body d-flex align-items-center c-detail">
-                        <div class="mr-3 align-self-center">
-                          <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon2.png" />
-                        </div>
-                        <div class="">
-                          <h6 class="font-weight-medium">Phone</h6>
-                          <p class="">
-                            251 546 9442
-                            <br /> 630 446 8851
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                      <div class="card-body d-flex align-items-center c-detail">
-                        <div class="mr-3 align-self-center">
-                          <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon3.png" />
-                        </div>
-                        <div class="">
-                          <h6 class="font-weight-medium">Email</h6>
-                          <p class="">
-                            info@test.com
-                            <br /> 123@test.com
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

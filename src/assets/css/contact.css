@@ -24,41 +24,41 @@
 }
 
 .contact3 .btn-danger-gradiant {
-  background: #ff4d7e;
+  background: #05a0e8;
   background: -webkit-linear-gradient(
     legacy-direction(to right),
-    #ff4d7e 0%,
-    #ff6a5b 100%
+    #05a0e8 0%,
+    #05529aeb 100%
   );
   background: -webkit-gradient(
     linear,
     left top,
     right top,
-    from(#ff4d7e),
-    to(#ff6a5b)
+    from(#05a0e8),
+    to(#05529aeb)
   );
-  background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
-  background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
-  background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+  background: -webkit-linear-gradient(left, #05a0e8 0%, #05529aeb 100%);
+  background: -o-linear-gradient(left, #05a0e8 0%, #05529aeb 100%);
+  background: linear-gradient(to right, #05a0e8 0%, #05529aeb 100%);
 }
 
 .contact3 .btn-danger-gradiant:hover {
-  background: #ff6a5b;
+  background: #05529aeb;
   background: -webkit-linear-gradient(
     legacy-direction(to right),
-    #ff6a5b 0%,
-    #ff4d7e 100%
+    #05529aeb 0%,
+    #05a0e8 100%
   );
   background: -webkit-gradient(
     linear,
     left top,
     right top,
-    from(#ff6a5b),
-    to(#ff4d7e)
+    from(#05529aeb),
+    to(#05a0e8)
   );
-  background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
-  background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
-  background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
+  background: -webkit-linear-gradient(left, #05529aeb 0%, #05a0e8 100%);
+  background: -o-linear-gradient(left, #05529aeb 0%, #05a0e8 100%);
+  background: linear-gradient(to right, #05529aeb 0%, #05a0e8 100%);
 }
 
 .contact-label {
