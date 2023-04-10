@@ -6,28 +6,28 @@ import Form from "react-bootstrap/Form";
 const Blogs = () => {
   const allBlogs = [
     {
-      title: "Heading title one",
+      title: "Web Development",
       id: "one",
       desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt ea ipsum enim facilis, voluptate voluptatibus. Odio dolorum expedita eligendi similique veritatis a tenetur maxime repellat. Alias ea sunt quos?",
-      img: "https://img.freepik.com/free-photo/freelance-young-businesswoman-casual-wear-using-laptop-working-living-room-home_7861-3050.jpg?size=626&ext=jpg&ga=GA1.1.1706456642.1681098824&semt=sph",
+      img: "https://img.freepik.com/free-vector/new-app-development-desktop_23-2148684987.jpg?size=626&ext=jpg&ga=GA1.2.1540744635.1681153160&semt=ais",
     },
     {
-      title: "Heading title two",
+      title: "App Development",
       id: "two",
       desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt ea ipsum enim facilis, voluptate voluptatibus. Odio dolorum expedita eligendi similique veritatis a tenetur maxime repellat. Alias ea sunt quos?",
-      img: "https://img.freepik.com/free-photo/freelance-young-businesswoman-casual-wear-using-laptop-working-living-room-home_7861-3050.jpg?size=626&ext=jpg&ga=GA1.1.1706456642.1681098824&semt=sph",
+      img: "https://img.freepik.com/free-vector/app-development-concept-illustration_114360-5164.jpg?size=626&ext=jpg&ga=GA1.1.1540744635.1681153160&semt=ais",
     },
     {
-      title: "Heading title three",
+      title: "UI/UX Design",
       id: "three",
       desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt ea ipsum enim facilis, voluptate voluptatibus. Odio dolorum expedita eligendi similique veritatis a tenetur maxime repellat. Alias ea sunt quos?",
-      img: "https://img.freepik.com/free-photo/freelance-young-businesswoman-casual-wear-using-laptop-working-living-room-home_7861-3050.jpg?size=626&ext=jpg&ga=GA1.1.1706456642.1681098824&semt=sph",
+      img: "https://img.freepik.com/free-photo/representations-user-experience-interface-design_23-2150038907.jpg?size=626&ext=jpg&ga=GA1.2.1540744635.1681153160&semt=ais",
     },
     {
-      title: "Heading title four",
+      title: "Digital Marketing",
       id: "four",
       desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt ea ipsum enim facilis, voluptate voluptatibus. Odio dolorum expedita eligendi similique veritatis a tenetur maxime repellat. Alias ea sunt quos?",
-      img: "https://img.freepik.com/free-photo/freelance-young-businesswoman-casual-wear-using-laptop-working-living-room-home_7861-3050.jpg?size=626&ext=jpg&ga=GA1.1.1706456642.1681098824&semt=sph",
+      img: "https://img.freepik.com/free-vector/marketing-consulting-concept-illustration_114360-9027.jpg?size=626&ext=jpg&ga=GA1.1.1540744635.1681153160&semt=sph",
     },
   ];
 
