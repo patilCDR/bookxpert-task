@@ -1,18 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import '../../../assets/css/auth.css';
 
 const SignUp = () => {
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    navigate('/home');
+  };
+
   return (
     <section className='auth-section'>
-      <div className='container'>
+      <div className='auth-container'>
         <div className='wrapper col-10 col-md-5 col-lg-4'>
           <div className='title'>
             <span>Login</span>
           </div>
-          <form action='#' className='bg-white'>
+          <form action='#' className='bg-white' onSubmit={handleSubmit}>
             <div className='row'>
               <i className='bi bi-envelope-fill'></i>
               <input type='email' placeholder='Email' required />

@@ -17,16 +17,16 @@ const App = () => {
   const [showNav, setShowNav] = useState(true);
 
   useEffect(() => {
-    setShowNav(pathname === '/login' || pathname === '/signup' ? false : true);
-  }, []);
+    setShowNav(pathname === '/' || pathname === '/signup' ? false : true);
+  }, [pathname]);
 
   const routes = [
-    { path: '/', element: <Home /> },
+    { path: '/home', element: <Home /> },
     { path: '/about', element: <About /> },
     { path: '/blog', element: <Blogs /> },
     { path: '/services', element: <Services /> },
     { path: '/contact', element: <Contact /> },
-    { path: '/login', element: <Login /> },
+    { path: '/', element: <Login /> },
     { path: '/signup', element: <SignUp /> },
   ];
   return (

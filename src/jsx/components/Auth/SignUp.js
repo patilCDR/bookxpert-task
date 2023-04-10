@@ -7,7 +7,7 @@ const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <section className='auth-section'>
-      <div className='container'>
+      <div className='auth-container'>
         <div className='wrapper col-10 col-md-5 col-lg-4'>
           <div className='title'>
             <span>Sign Up</span>
@@ -39,7 +39,7 @@ const SignUp = () => {
               <input type='submit' value='Sign up' />
             </div>
             <div className='signup-link'>
-              Already a member? <Link to='/login'>Login now</Link>
+              Already a member? <Link to='/'>Login now</Link>
             </div>
           </form>
         </div>

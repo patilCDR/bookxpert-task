@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -18,8 +17,9 @@
 ::selection {
   background: rgba(26, 188, 156, 0.3);
 }
-.container {
-  max-width: 440px;
+.auth-container {
+  /* max-width: 440px; */
+  width: 100%;
   padding: 0 20px;
   position: relative;
   height: 100vh;

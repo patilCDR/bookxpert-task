@@ -23,7 +23,7 @@ function OffcanvasExample() {
       <Navbar bg='white' expand='md' expanded={expanded} fixed='top'>
         <Container>
           <Navbar.Brand href='#'>
-            <Link to='/' style={{ textDecoration: 'none' }}>
+            <Link to='/home' style={{ textDecoration: 'none' }}>
               <img
                 src='http://www.bookxpert.co.in/assets/img/logo.png'
                 alt=''
@@ -47,7 +47,7 @@ function OffcanvasExample() {
               <Nav className='justify-content-end flex-grow-1 pe-3'>
                 <Nav.Link href='/' onClick={() => setExpanded(false)}>
                   {/* <Link to='/' className={`nav-link active`}> */}
-                  <Link to='/' className={`nav-link ${pathname === '/' && 'active'}`}>
+                  <Link to='/home' className={`nav-link ${pathname === '/home' && 'active'}`}>
                     Home
                   </Link>
                 </Nav.Link>
