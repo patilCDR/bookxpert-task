@@ -10,12 +10,16 @@ const SignUp = () => {
       <div className='container'>
         <div className='wrapper col-10 col-md-5 col-lg-4'>
           <div className='title'>
-            <span>Login</span>
+            <span>Sign Up</span>
           </div>
           <form action='#' className='bg-white'>
             <div className='row'>
+              <i className='bi bi-person-fill'></i>
+              <input type='name' placeholder='Name' required name='name' />
+            </div>
+            <div className='row'>
               <i className='bi bi-envelope-fill'></i>
-              <input type='email' placeholder='Email' required />
+              <input type='email' placeholder='Email' required name='email' />
             </div>
             <div className='row'>
               <i
@@ -24,16 +28,18 @@ const SignUp = () => {
                 } cursor-pointer`}
                 onClick={() => setShowPassword(prevState => !prevState)}
               ></i>
-              <input type={showPassword ? 'text' : 'password'} placeholder='Password' required />
-            </div>
-            <div className='pass'>
-              <a href='#'>Forgot password?</a>
+              <input
+                type={showPassword ? 'text' : 'password'}
+                placeholder='Password'
+                required
+                name='password'
+              />
             </div>
             <div className='row button'>
-              <input type='submit' value='Login' />
+              <input type='submit' value='Sign up' />
             </div>
             <div className='signup-link'>
-              Not a member? <Link to='/signup'>Signup now</Link>
+              Already a member? <Link to='/login'>Login now</Link>
             </div>
           </form>
         </div>

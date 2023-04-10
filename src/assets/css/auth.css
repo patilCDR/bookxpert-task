@@ -40,10 +40,10 @@
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
 }
 .wrapper .title {
-  height: 90px;
+  height: 70px;
   border-radius: 5px 5px 0 0;
   color: #fff;
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -64,7 +64,7 @@
   padding-left: 60px;
   border-radius: 5px;
   border: 1px solid lightgrey;
-  font-size: 16px;
+  font-size: 0.9rem;
   transition: all 0.3s ease;
 }
 form .row input:focus {
@@ -79,7 +79,7 @@ form .row input::placeholder {
   width: 47px;
   height: 100%;
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   background: var(--bgBlue);
   border: 1px solid var(--bgBlue);
   border-radius: 5px 0 0 5px;
@@ -92,7 +92,7 @@ form .row input::placeholder {
 }
 .wrapper form .pass a {
   color: var(--bgBlue);
-  font-size: 17px;
+  font-size: 1rem;
   text-decoration: none;
 }
 .wrapper form .pass a:hover {
@@ -100,7 +100,7 @@ form .row input::placeholder {
 }
 .wrapper form .button input {
   color: #fff;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 500;
   padding-left: 0px;
   background: var(--bgBlue);
@@ -113,7 +113,7 @@ form .button input:hover {
 .wrapper form .signup-link {
   text-align: center;
   margin-top: 20px;
-  font-size: 17px;
+  font-size: 0.9rem;
 }
 .wrapper form .signup-link a {
   color: var(--bgBlue);

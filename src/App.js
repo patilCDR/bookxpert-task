@@ -9,6 +9,7 @@ import Header from './jsx/layouts/Header';
 import Footer from './jsx/layouts/Footer';
 import Blogs from './jsx/components/Blogs';
 import Login from './jsx/components/Auth/Login';
+import SignUp from './jsx/components/Auth/SignUp';
 
 const App = () => {
   const { pathname } = window.location;
@@ -26,6 +27,7 @@ const App = () => {
     { path: '/services', element: <Services /> },
     { path: '/contact', element: <Contact /> },
     { path: '/login', element: <Login /> },
+    { path: '/signup', element: <SignUp /> },
   ];
   return (
     <>
