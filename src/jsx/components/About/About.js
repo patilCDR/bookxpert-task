@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { aboutImg, teamImg, MainImg } from "../../../assets/images";
 import Counter from "./CountUp";
 import AboutInfo from "./AboutInfo";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section>
       <div className="container">
@@ -91,7 +95,6 @@ const About = () => {
         </div>
       </div>
       <Counter />
-      {/* <AboutInfo /> */}
     </section>
   );
 };
