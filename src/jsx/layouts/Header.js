@@ -6,9 +6,17 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function OffcanvasExample() {
+  const location = useLocation();
+  const { pathname } = location;
+  console.log(
+    '🚀 ~ file: Header.js:14 ~ OffcanvasExample ~ pathname:',
+    pathname,
+    pathname === '/',
+    `nav-link ${pathname === '/' ? 'active' : ''}`
+  );
   const [expanded, setExpanded] = useState(false);
   return (
     <>
@@ -38,22 +46,26 @@ function OffcanvasExample() {
             <Offcanvas.Body>
               <Nav className='justify-content-end flex-grow-1 pe-3'>
                 <Nav.Link href='/' onClick={() => setExpanded(false)}>
-                  <Link to='/' className='nav-link active'>
+                  {/* <Link to='/' className={`nav-link active`}> */}
+                  <Link to='/' className={`nav-link ${pathname === '/' && 'active'}`}>
                     Home
                   </Link>
                 </Nav.Link>
-                <Nav.Link href=''>
-                  <Link to='/about' className='nav-link' onClick={() => setExpanded(false)}>
+                <Nav.Link href='' onClick={() => setExpanded(false)}>
+                  <Link to='/about' className={`nav-link ${pathname === '/about' && 'active'}`}>
                     About
                   </Link>
                 </Nav.Link>
-                <Nav.Link href=''>
-                  <Link to='/contact' className='nav-link' onClick={() => setExpanded(false)}>
+                <Nav.Link href='' onClick={() => setExpanded(false)}>
+                  <Link to='/blog' className={`nav-link ${pathname === '/blog' && 'active'}`}>
                     Blog
                   </Link>
                 </Nav.Link>
-                <Nav.Link href=''>
-                  <Link to='/contact' className='nav-link' onClick={() => setExpanded(false)}>
+                <Nav.Link href='' onClick={() => setExpanded(false)}>
+                  <Link
+                    to='/contact'
+                    className={`nav-link ${pathname === '/services' && 'active'}`}
+                  >
                     Services
                   </Link>
                 </Nav.Link>
